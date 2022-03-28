@@ -22,7 +22,7 @@ while(True):
           ''')
     choice = int(input("Select an option : "))
 
-    functions =[arearec ,periRec ,areaSquare]
+    functions =[arearec,periRec,areaSquare]
     a = functions[choice-1]()
     ch = input("\n Press enter to continue OR press N to discontinue!")
     if (ch == "n" or ch == "N"):
