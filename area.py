@@ -20,12 +20,12 @@ while(True):
           2. Perimeter of Rectangle
           3. Area of Square
           ''')
-    choice = int(input("Select an option : "))
-
-    functions =[arearec,periRec,areaSquare]
-    a = functions[choice-1]()
-    ch = input("\n Press enter to continue OR press N to discontinue!")
-    if (ch == "n" or ch == "N"):
-        break
+    ch = int(input("enter your choice"))
+    if ch == 1:
+        print(arearec(n1, n2))
+    elif ch == 2:
+        print(periRec(n1, n2))
+    elif ch == 3:
+        print(areaSquare(n1))
     else:
-        pass
+        print("Invalid choice")
